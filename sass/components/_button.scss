@@ -1,0 +1,98 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1.5rem 5rem;
+        display: inline-block;
+        transition: all 0.2s;
+        color: cornsilk;
+        border-radius: 10rem;
+        position: relative;
+    }
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 0.4rem 2.5rem rgba(255, 127, 80, 0.8);
+
+        &::after {
+            transform: scaleX(1.2) scaleY(1.5);
+            opacity: 0;
+        }
+    }
+    &:active , &:focus {
+        outline: none;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.1rem 1rem rgba(255, 127, 80, 0.8);
+    }
+    &--heading {
+        background-color: $color-blueVio;
+        color: coral;
+        animation: moveUp 2s ease-out 0.75s;
+        animation-fill-mode: backwards;
+
+        &::after {
+            background-color: $color-blueVio;
+            color: coral;
+        }
+    }
+    &--chapters {
+        background-color: $color-blueVio;
+        color: coral;
+        animation: moveUp 2s ease-out 0.75s;
+        animation-fill-mode: backwards;
+
+        &::after {
+            background-color: $color-blueVio;
+            color: coral;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+    }
+    &__form{
+        border: none;
+        background-image: $background-grad-orange;
+    }
+}
+
+.btn-text {
+    &,
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s;
+        
+    }
+    &:hover {
+        background-color: $color-blueVio;
+        box-shadow: 0 1rem 2rem rgba(255, 127, 80, 0.8);
+        transform: translateY(-0.2rem);
+        border-bottom: none;
+        border-radius: 2rem;
+    }
+    &:active, &:focus {
+        background-color: $color-blueVio;
+        outline: none;
+        box-shadow: 0 0.5rem 1rem rgba(255, 127, 80, 0.8);
+        transform: translateY(0);
+        border-bottom: none;
+        border-radius: 2rem;
+
+    }
+}

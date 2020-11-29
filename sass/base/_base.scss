@@ -1,0 +1,42 @@
+
+*,
+*::before,
+*::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+
+html {
+    // size of 1 rem
+    font-size: 62.5%;
+    /* 10px / 16 = 0.625 */
+    @include responsive(tab-land){
+        font-size: 56.25%;
+    }
+    @include responsive(tab-port){
+        font-size: 50%;
+    }
+    @include responsive(phone){
+        font-size: 43.75%;
+    }
+
+    @include responsive(big-desk){
+        font-size: 75%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+
+}
+a{
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,body{
+    overflow-x: hidden; 
+}

@@ -1,0 +1,37 @@
+.feature-box {
+    background-color: $feature-background-color;
+    color: $main-text-color;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    box-shadow: $shadow-orange;
+    transition: transform .2s;
+    @include responsive(tab-port){
+        padding: 1rem;
+    }
+    &:hover {
+        transform: translateY(-1.2rem) scale(1.1);
+    }
+    &__icon {
+        display: inline-block;
+        font-size: 5rem;
+        margin-bottom: 0.5rem;
+        background-image: $background-grad-orange;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        @include responsive(tab-port){
+            margin-bottom: 0;
+
+        }
+    }
+
+    &__txt{
+        @include responsive(tab-port){
+            text-align: left;
+        }
+    }
+}
+

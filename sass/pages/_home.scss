@@ -1,0 +1,65 @@
+.section-about{
+    background-color: $about-background-color;
+    padding:5rem 2rem;
+
+    @include responsive(tab-port){
+        padding: 4rem 2rem 6rem 2rem;
+    }
+}
+
+.section-feature{
+    height: 95vh;
+    padding: 12rem 1rem;
+    background-image:$main-background-color, url(../img/dbdfeatures.jpg) ;
+    background-size: cover;
+
+    @include responsive(tab-port){
+        height: 100%;
+        padding: 7rem 0;
+    }
+}
+
+.section-chapters{
+    background-color: $about-background-color;
+    padding-top:2rem;
+    // padding: 5rem 0 5rem 0;
+    @include responsive(tab-land){
+        padding: 0 2rem;
+    }
+}
+
+.section-review{
+    position: relative;
+    padding: 6rem 0;
+
+}
+
+.section-subscribe{
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $card-front,$feature-background-color);
+}
+.subscribe{
+    background-image:linear-gradient(105deg , #292420 50%, transparent 50%) ,url(../img/scdbd.jpg);
+    background-size: cover;
+    color: white;
+    border-radius: .3rem;
+
+    @include responsive(tab-port){
+
+        background-image:linear-gradient(to right , #292420 0%, transparent 100%) ,url(../img/scdbd.jpg);
+
+    }
+
+    &__form{
+        width: 50%;
+        padding: 6rem;
+
+        @include responsive(tab-land){
+            width: 55%;
+        }
+        @include responsive(tab-port){
+            width: 100%;
+            padding: 2rem;
+        }
+    }
+}

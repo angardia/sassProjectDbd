@@ -1,0 +1,111 @@
+.card {
+    height: 45rem;
+    perspective: 150rem;
+    position: relative;
+
+    &__side {
+        position: absolute;
+        height: 45rem;
+        transition: all 2s ease;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 0.5rem;
+        box-shadow: $shadow-orange;
+        overflow: hidden;
+
+        &--front {
+            background-color: $card-front;
+        }
+        &--back {
+            background-image: $card-back;
+            transform: rotateY(180deg);
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    &__picture {
+        background-size: contain;
+        height: 17rem;
+        background-repeat: no-repeat;
+        background-blend-mode: hue;
+        background-position: center center;
+
+        &--1 {
+            background-image: $card-back, url(../img/chapter_chain.png);
+        }
+        &--2 {
+            background-image: $card-back, url(../img/chapter_cursed.png);
+        }
+        &--3 {
+            background-image: $card-back, url(../img/chapter_ghost.png);
+        }
+    }
+    &__heading {
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+    }
+    &__heading-span {
+        background-image: $card-back;
+    }
+    &__details {
+        padding: 2rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            @include responsive(tab-land){
+                width: 100%;
+            }
+            @include responsive(tab-port){
+                width: 80%;
+            }
+
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                white-space: nowrap;
+                color: white;
+                padding: 1rem;
+                &:not(:last-child) {
+                    border-bottom: 0.1rem solid gray;
+                }
+            }
+        }
+    }
+    &__cta{   
+        @include centering;
+        transform: translate(-50%,-40%);
+        width: 90%;
+    }
+    &__price-box{
+        color: white;
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+    &__price-only{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    &__price-value{
+       font-size: 6rem;
+       font-weight: 100; 
+       margin-bottom: 2rem;
+    }
+}

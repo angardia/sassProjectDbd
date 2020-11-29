@@ -1,0 +1,83 @@
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+
+}
+
+.heading-primary {
+    color: azure;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    padding-top: 30rem;
+
+    &--main {
+        display: block;
+        font-size: 4rem;
+        font-weight: 300;
+        letter-spacing: .5rem;
+        animation: moveLeft 2s;
+
+        @include responsive(phone){
+            letter-spacing: .5rem;
+            font-size: 4rem;
+        }
+    }
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 1rem;
+        animation: moveRight 2s;
+        @include responsive(phone){
+            letter-spacing: .5rem;
+
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    background-image: $background-grad-orange;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.2s;
+
+    @include responsive(tab-port){
+        font-size: 3.2rem;
+    }
+    
+    @include responsive(phone){
+        font-size: 3.1rem;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.heading-tertiary {
+    color: $color-lightOrange;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+.paragraph {
+    font-size: 1.6rem;
+    color: $main-text-color;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+
+}

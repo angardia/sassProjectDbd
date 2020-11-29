@@ -1,0 +1,49 @@
+.header {
+    height: 95vh;
+    background-image: $main-background-color,
+        url(../img/dbdwp.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    &__logo {
+        height: 6rem;
+    }
+    
+
+
+    &__txt-box {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.paragraph-box {
+
+    position: relative;
+    border-radius: 50%;
+    margin: 2rem auto;
+    margin-bottom: 15rem;
+    &:before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        top: -30%;
+        left: -10%;
+        height: 150%;
+        width: 120%;
+        z-index: -1;
+        box-shadow: 0rem 1.8rem 2rem 0rem  rgba(255, 127, 80, 0.8);
+      }
+      &-size{
+        padding-bottom: 2rem;
+      }
+  }
