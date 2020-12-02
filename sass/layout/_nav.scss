@@ -12,7 +12,7 @@
         position: absolute;
         top: 6rem;
         right: 6rem;
-        cursor: url(/img/annawep.png), auto;
+        cursor: url(../img/annawep.png), auto;
 
         @include responsive(tab-port) {
             top: 4rem;
