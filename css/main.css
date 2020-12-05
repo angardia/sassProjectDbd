@@ -604,7 +604,7 @@ body {
 
 .form__radio-label {
   font-size: 1.6rem;
-  cursor: url(/img/annawep.png), auto;
+  cursor: url(../img/annawep.png), auto;
   position: relative;
   padding-left: 4rem;
 }
@@ -1090,7 +1090,7 @@ body {
   position: absolute;
   top: 6rem;
   right: 6rem;
-  cursor: url(/img/annawep.png), auto;
+  cursor: url(../img/annawep.png), auto;
 }
 
 @media (max-width: 56.25em) {
