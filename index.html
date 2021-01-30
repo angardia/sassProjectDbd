@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="shortcut icon" type="image/png" href="img/faviMori.png">
 
-    <title>Dead by daylight - testing my css skills</title>
+    <title>Dead by daylight - landing page</title>
 </head>
 
 <body>
     <div class="nav">
-        <input type="checkbox" class="nav__checkbox" id="nav-toggle">
+        <input type="checkbox" class="nav__checkbox" id="nav-toggle"> 
         <label for="nav-toggle" class="nav__btn">
             <span class="nav__burger">&nbsp;</span>
         </label>
+
         <div class="nav__bg">&nbsp;</div>
         <nav class="nav__main">
             <ul class="nav__list">
@@ -26,16 +27,16 @@
                     <a href="#/" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#/" class="nav__link">About</a>
+                    <a href="#about" class="nav__link">About</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#/" class="nav__link">Features Chapters</a>
+                    <a href="#featured" class="nav__link">Features Chapters</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#/" class="nav__link">Reviews</a>
+                    <a href="#reviews" class="nav__link">Reviews</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#/" class="nav__link">Subscription</a>
+                    <a href="#sub" class="nav__link">Subscription</a>
                 </li>
             </ul>
 
@@ -64,7 +65,7 @@
 
             </div>
             <a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" target="_blank"
-            class="btn btn--heading">buy on steam</a>
+                class="btn btn__form">buy on steam</a>
         </div>
 
 
@@ -72,7 +73,7 @@
 
     </header>
     <main>
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="utility-center-txt utility-margin-bottom-big">
                 <h2 class="heading-secondary">about the game</h2>
             </div>
@@ -90,14 +91,17 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="gallery">
-                        <img src="./img/DBD_Killers.jpg" alt="dead by daylight picture" class="gallery__photo gallery__photo--p1">
-                        <img src="./img/Dead_Survivors.jpg" alt="dead by daylight picture" class="gallery__photo gallery__photo--p2">
-                        <img src="./img/GF_Lore2.jpg" alt="dead by daylight picture" class="gallery__photo gallery__photo--p3">
+                        <img src="./img/DBD_Killers.jpg" alt="dead by daylight picture" loading="lazy"
+                            class="gallery__photo gallery__photo--p1">
+                        <img src="./img/Dead_Survivors.jpg" alt="dead by daylight picture" loading="lazy"
+                            class="gallery__photo gallery__photo--p2">
+                        <img src="./img/GF_Lore2.jpg" alt="dead by daylight picture" loading="lazy"
+                            class="gallery__photo gallery__photo--p3">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-feature">
+        <section class="section-feature" id="featured">
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="feature-box">
@@ -105,7 +109,7 @@
                         <h3 class="heading-tertiary">Add-ons</h3>
                         <p class="feature-box__txt">Add-ons boost specific aspect of a Killer's Power and a Survivor's
                             Item when equipped. <br>
-                            Add-ons are an addition to Killer Powers and Survivor Items</p>
+                            Add-ons are an addition to Killer Powers and Survivor Items.</p>
                     </div>
                 </div>
                 <div class="col-1-of-4">
@@ -232,7 +236,7 @@
                 <a href="#/" class="btn btn--chapters utility-margin-bottom-big ">Discover all Chapters</a>
             </div>
         </section>
-        <section class="section-review">
+        <section class="section-review" id="reviews">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/dbdmovingbg.mp4" type="video/mp4">
@@ -246,7 +250,7 @@
             <div class="row">
                 <div class="review">
                     <figure class="review__shape">
-                        <img class="review__img" src="img/GR-logo.png" alt="game rant logo">
+                        <img class="review__img" loading="lazy" src="img/GR-logo.png" alt="game rant logo">
                     </figure>
                     <div class="review__text">
                         <h3 class="heading-tertiary utility-margin-bottom-small">GAME RANT</h3>
@@ -258,7 +262,7 @@
             <div class="row">
                 <div class="review">
                     <figure class="review__shape">
-                        <img class="review__img" src="img/gamespotlogo.png" alt="gamespot logo">
+                        <img class="review__img" loading="lazy" src="img/gamespotlogo.png" alt="gamespot logo">
                     </figure>
                     <div class="review__text">
                         <h3 class="heading-tertiary utility-margin-bottom-small">GAMESPOT</h3>
@@ -271,7 +275,7 @@
                 <a href="#/" class="btn btn--chapters utility-margin-bottom-big ">All Reviews</a>
             </div>
         </section>
-        <section class="section-subscribe">
+        <section class="section-subscribe" id="sub">
             <div class="row">
                 <div class="subscribe">
                     <div class="subscribe__form">
@@ -312,7 +316,7 @@
     </main>
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="./img/dbdlogowhite.png" alt="logo" class="footer__logo">
+            <img src="./img/dbdlogowhite.png" alt="logo" loading="lazy" class="footer__logo">
         </div>
         <div class="row">
             <div class="col-1-of-2">
