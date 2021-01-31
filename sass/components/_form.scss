@@ -15,8 +15,15 @@
         border: none;
         border-bottom: 0.3rem solid transparent;
         transition: all 0.3s;
+
         @include responsive(tab-port){
-            width: 100%;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @include responsive(phone){
+            width: 90%;
+            margin: 0 auto;
         }
 
         &:focus {
@@ -52,13 +59,18 @@
         display: inline-block;
 
         @include responsive(tab-port){
-            width: 100%;
+            text-align: center;
             margin-bottom: 1rem;
+        }
+        @include responsive(phone){
+            width: 90%;
+            text-align: left;
+            margin-bottom: 1rem;
+            margin-left: 2rem;
         }
     }
 
     &__radio-input{
-        position: fixed;
         opacity: 0;
     }
 
@@ -76,7 +88,7 @@
         border: 0.5rem solid $color-lightOrange;
         border-radius: 50%;
         left: 0;
-        top: -.2rem;
+        top: -.7rem;
 
         &::after {
             content: "";
